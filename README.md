@@ -1,4 +1,4 @@
-# الياس
+# الياس الصيود مولود في 2007 
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             color: #333;
+            direction: rtl;
         }
 
         /* تنسيق الهيدر */
@@ -23,6 +24,15 @@
             text-align: center;
         }
 
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
         /* تصميم قائمة الألعاب */
         .games-list {
             display: flex;
@@ -30,6 +40,7 @@
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 30px;
+            padding: 20px;
         }
 
         .game {
@@ -40,29 +51,31 @@
             width: 200px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
 
         .game img {
             width: 100%;
             border-radius: 10px;
+            margin-bottom: 15px;
         }
 
         .game a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
-            display: block;
-            margin-top: 10px;
+            font-size: 18px;
             transition: color 0.3s ease;
-        }
-
-        .game:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
         }
 
         .game a:hover {
             color: #007BFF;
+        }
+
+        /* التأثيرات عند التمرير */
+        .game:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
 
         /* تحسين التنسيق للموبايل */
@@ -82,7 +95,7 @@
 <body>
     <header>
         <h1>موقع الألعاب الكلاسيكية</h1>
-        <p>استمتع بألعابك المفضلة!</p>
+        <p>استمتع بألعابك المفضلة القديمة في هذا الموقع!</p>
     </header>
 
     <div class="games-list">
